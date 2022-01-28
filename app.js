@@ -3,9 +3,9 @@ const cors = require('cors');
 const express = require('express');
 const fs = require('fs');
 const httpContext = require('express-http-context');
-const marked = require('marked');
+const { marked } = require('marked');
 
-const config = require('./config');
+const config = require('./config.json');
 const logger = require('./services/logger')(module);
 
 const authRouter = require('./routes/auth.routes');
