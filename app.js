@@ -5,6 +5,8 @@ const fs = require('fs');
 const httpContext = require('express-http-context');
 const { marked } = require('marked');
 
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const config = require('./config.json');
 const logger = require('./services/logger')(module);
 
@@ -12,9 +14,20 @@ const authRouter = require('./routes/auth.routes');
 const companiesRouter = require('./routes/companies.routes');
 const contactsRouter = require('./routes/contacts.routes');
 
+
+
+
+
+mongoose.connect('mongodb://127.0.0.1:27017/testdb', {}).then(() => {
+
+}, (err) => {
+  console.log(err);
+});
+
 const app = express();
 
 app.use(httpContext.middleware);
+
 app.use((req, res, next) => {
   httpContext.ns.bindEmitter(req);
   httpContext.ns.bindEmitter(res);
@@ -22,16 +35,15 @@ app.use((req, res, next) => {
   httpContext.set('url', req?.url);
   next();
 });
-
-app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(express.json());
-
 app.use(express.static(`${__dirname}/public`));
 
-app.use('/auth', authRouter);
-app.use('/companies', companiesRouter);
-app.use('/contacts', contactsRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/companies', companiesRouter);
+app.use('/api/contacts', contactsRouter);
 
 app.get('/', (req, res) => {
   const path = `${__dirname}/README.md`;

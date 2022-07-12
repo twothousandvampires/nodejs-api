@@ -1,12 +1,17 @@
 const { Router } = require('express');
 const jwt = require('jsonwebtoken');
 const config = require('../config');
+const mongoose = require("mongoose");
 const logger = require('../services/logger')(module);
-
+require('../schemas/User');
 const router = Router();
+const User = mongoose.model('user');
 
-router.get('/', (req, res) => {
-  const { user } = req?.query;
+router.post('/', async (req, res) => {
+  const user = await User.findOne({
+    name: req.body.name,
+    password: req.body.password,
+  });
 
   if (!user) {
     logger.error('No user passed');
