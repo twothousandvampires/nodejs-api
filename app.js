@@ -14,9 +14,7 @@ const authRouter = require('./routes/auth.routes');
 const companiesRouter = require('./routes/companies.routes');
 const contactsRouter = require('./routes/contacts.routes');
 
-
-
-
+require('./models/Company');
 
 mongoose.connect('mongodb://127.0.0.1:27017/testdb', {}).then(() => {
 

@@ -23,13 +23,12 @@ const company = {
 };
 
 function get(req, res) {
-  const URL = _getCurrentURL(req);
-  company.photos = [{
-    name: '0b8fc462dcabf7610a91.png',
-    filepath: `${URL}0b8fc462dcabf7610a91.png`,
-    thumbpath: `${URL}0b8fc462dcabf7610a91_160x160.png`,
-  }];
-  return res.status(200).json(company);
+  // const URL = _getCurrentURL(req);
+  // company.photos = [{
+  //   name: '0b8fc462dcabf7610a91.png',
+  //   filepath: `${URL}0b8fc462dcabf7610a91.png`,
+  //   thumbpath: `${URL}0b8fc462dcabf7610a91_160x160.png`,
+  // }];
 }
 
 function update(req, res) {
