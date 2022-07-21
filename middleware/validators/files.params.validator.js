@@ -4,13 +4,16 @@ const path = require('path');
 const config = require('../../config');
 
 const logger = require('../../services/logger')(module);
+const mongoose = require('mongoose');
+require('../../models/Company');
+const model = mongoose.model('companies');
 
 module.exports = {
   addCompanyImage,
   removeCompanyImage,
 };
 
-function addCompanyImage(req, res, next) {
+async function addCompanyImage(req, res, next) {
   try {
     if (!req?.files?.file?.[0]) {
       res.status(400);
@@ -21,8 +24,8 @@ function addCompanyImage(req, res, next) {
       res.status(400);
       throw new Error('No company ID passed for file upload');
     }
-
-    if (req.params.id !== config.company_id) {
+    const company = await model.findOne({_id: req.params.id })
+    if (!company) {
       res.status(404);
       throw new Error(`No company with ID ${req.params.id}`);
     }

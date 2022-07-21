@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="14a5e759-3a13-41c7-8fc0-29ff47bdbf9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/companies.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/companies.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/files.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/files.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/validators/files.params.validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/validators/files.params.validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Company.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/companies.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/companies.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +63,9 @@
       <workItem from="1657632905275" duration="5963000" />
       <workItem from="1657698349182" duration="1339000" />
       <workItem from="1657701717953" duration="12635000" />
+      <workItem from="1658311927613" duration="157000" />
+      <workItem from="1658313022732" duration="61000" />
+      <workItem from="1658391436355" duration="9901000" />
     </task>
     <servers />
   </component>

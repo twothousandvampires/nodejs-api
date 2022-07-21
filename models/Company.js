@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const CompanySchema = new Schema({
-  id: {
-    type: Number,
-    required: true,
-  },
   contactId: {
-    type: Number,
+    type: String,
     required: true,
   },
   name: {
+    type: String,
+    required: true,
+  },
+  address: {
     type: String,
     required: true,
   },
@@ -39,12 +39,12 @@ const CompanySchema = new Schema({
     type: String,
     required: true,
   },
-  created_at: {
-    type: Date,
+  createdAt: {
+    type: String,
     required: true,
   },
-  updated_at: {
-    type: Date,
+  updatedAt: {
+    type: String,
     required: true,
   },
   photos: {
@@ -53,4 +53,4 @@ const CompanySchema = new Schema({
   },
 });
 
-mongoose.model('company', CompanySchema);
+mongoose.model('companies', CompanySchema);
