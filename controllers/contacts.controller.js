@@ -1,33 +1,44 @@
-const config = require('../config');
-
+const mongoose = require('mongoose');
+require('../models/Contact');
+const model = mongoose.model('contact');
 module.exports = {
   get,
   update,
-};
-
-const contact = {
-  id: config.contact_id,
-  lastname: 'Григорьев',
-  firstname: 'Сергей',
-  patronymic: 'Петрович',
-  phone: '79162165588',
-  email: 'grigoriev@funeral.com',
-  createdAt: '2020-11-21T08:03:26.589Z',
-  updatedAt: '2020-11-23T09:30:00Z',
+  create,
+  remove,
 };
 
 function get(req, res) {
-  return res.status(200).json(contact);
+  if (req.params.id) {
+    model.findOne({ id: req.params.id }).then((response) => res.status(200).json(response));
+  } else {
+    model.find().then((response) => res.status(200).json(response));
+  }
 }
 
-function update(req, res) {
+async function update(req, res) {
   const requestBody = req.body;
-
-  const updatedContact = { ...contact };
+  const contact = await model.findOne({ id: req.params.id });
   Object.keys(requestBody).forEach((key) => {
-    updatedContact[key] = requestBody[key];
+    contact[key] = requestBody[key];
   });
-  updatedContact.updatedAt = new Date();
+  contact.updatedAt = new Date();
+  contact.save().then((response=>{
+    return res.status(200).json(response);
+  }));
+}
 
-  return res.status(200).json(updatedContact);
+function remove(req, res){
+  model.deleteOne({ _id : req.params.id }).then(()=>{
+    res.status(200).send('Contact deleted');
+  });
+}
+
+function create(req, res){
+  const contact = req.body
+  contact.createdAt = new Date();
+  contact.updatedAt = new Date();
+  model.create(contact).then(() => {
+    res.status(200).json(contact);
+  });
 }

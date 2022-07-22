@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const config = require('../config');
 const mongoose = require("mongoose");
 const logger = require('../services/logger')(module);
-require('../schemas/User');
+require('../models/User');
 const router = Router();
 const User = mongoose.model('user');
 

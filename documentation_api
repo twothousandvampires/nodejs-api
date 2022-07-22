@@ -1,0 +1,11 @@
+POST /api/auth/ - авторизация и получение JWT токена
+
+GET /api/companies/:id? - получение списка компаний или получение конкретоной по id / query params : sort - параметр сортировки, page - пагинация
+PATCH /api/companies/:id - изменение компании по id
+POST /api/companies/:id/image - загрузка нового изображения для компании
+DELETE /api/companies/:id/:image_name - удаление изображения у компании
+
+GET /api/contacts/:id? - получение списка контактов или получение конкретоного по id
+PATCH /api/contacts/:id - изменение контакта по id
+DELETE /api/contacts/:id - удаление контакта
+POST /api/contacts/ - добавление контакта контакта

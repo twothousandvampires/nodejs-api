@@ -1,14 +1,13 @@
-/* eslint-disable no-ex-assign */
 const crypto = require('crypto');
 const fs = require('fs');
 const jimp = require('jimp');
 const path = require('path');
-
 const config = require('../config');
-
 const logger = require('../services/logger')(module);
-
 const thumbSize = config.thumb_size;
+const mongoose = require('mongoose');
+require('../models/Company');
+const model = mongoose.model('companies');
 
 module.exports = {
   saveImage,
@@ -19,7 +18,7 @@ async function saveImage(req, res) {
   try {
     logger.info('File upload started');
     const file = req.files.file[0];
-    const { user } = req;
+    const user  = req.user.name;
 
     const fileExtention = path.extname(file.originalname).toLowerCase();
     const fileName = crypto.randomBytes(10).toString('hex');
@@ -45,11 +44,17 @@ async function saveImage(req, res) {
 
     logger.info('File upload successfully finished');
 
-    return res.status(200).json({
+    let photos = {
       name: uploadedFileName,
       filepath: _getFileURL(req, uploadedFileName),
       thumbpath: _getFileURL(req, uploadedFileThumbName),
-    });
+    }
+    
+    let company = await model.findOne(req.body.id);
+    company.photos.push(photos)
+    company.save()
+
+    return res.status(200).json(photos);
   } catch (error) {
     logger.error(error);
     return res.json({ error });
@@ -69,7 +74,12 @@ async function removeImage(req, res) {
     const thumbPath = path.resolve(`${config.images_dir}${user}/${thumbName}`);
     await _remove(thumbPath).catch((err) => { logger.error(err); });
 
-    return res.status(200).end();
+    let company = await model.findOne(req.body.id);
+    company.photos = company.photos.filter((elem) => elem.name !== fileName);
+    company.save()
+
+    
+    return res.status(200).send('!');
   } catch (error) {
     logger.error(error);
     return res.json({ error });
@@ -105,7 +115,8 @@ async function _remove(file) {
 
 function _getFileURL(req, fileName) {
   const { port } = config;
-  const { user } = req;
+  const user = req.user.name
   const url = `${req.protocol}://${req.hostname}${port === '80' || port === '443' ? '' : `:${port}`}`;
-  return `${url}/images/${user}/${fileName}`;
+  const full = `${url}/images/${user}/${fileName}`
+  return full;
 }

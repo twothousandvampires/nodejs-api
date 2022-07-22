@@ -11,7 +11,6 @@ module.exports = async (req, res, next) => {
     if (!token) {
       return res.status(401).end();
     }
-
     const decoded = jwt.verify(token, config.app);
     req.user = decoded.user;
     httpContext.set('user', decoded?.user);

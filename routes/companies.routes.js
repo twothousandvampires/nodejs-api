@@ -12,7 +12,7 @@ const filesParamsValidator = require('../middleware/validators/files.params.vali
 const filesController = require('../controllers/files.controller');
 
 router.get(
-  '/:id',
+  '/:id?',
   auth,
   companiesController.get,
 );

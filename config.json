@@ -11,5 +11,6 @@
   "contact_id": "16",
   "uploads_dir": "./uploads",
   "images_dir": "public/images/",
-  "thumb_size": 160
+  "thumb_size": 160,
+  "perPage": 2
 }
