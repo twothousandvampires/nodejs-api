@@ -1,0 +1,212 @@
+[{
+  "_id": {
+    "$oid": "62d925e6b401fb97e5558895"
+  },
+  "contactId": "62ceec87625ff6e369a1d3f3",
+  "name": "ОАО «Пожилые инвестиции»",
+  "shortName": "Пожилые",
+  "businessEntity": "ОАО",
+  "address": "Высокая",
+  "contract": {
+    "no": "12346",
+    "issue_date": "2015-03-12T00:00:00Z"
+  },
+  "type": [
+    "agent",
+    "contractor"
+  ],
+  "status": "active",
+  "createdAt": "2020-11-21T08:03:00Z",
+  "updatedAt": "2020-11-23T09:30:00Z",
+  "photos": [
+    {
+      "name": "0b8fc462dcabf7610a91.png",
+      "filepath": "0b8fc462dcabf7610a91.png",
+      "thumbpath": "0b8fc462dcabf7610a91_160x160.png"
+    },
+    {
+      "name": "0fc7fefb681223261be0.jpg",
+      "filepath": {},
+      "thumbpath": {}
+    },
+    {
+      "name": "08d4e1eaa9cf7e81d76c.jpg",
+      "filepath": "http://localhost:2114/images/user1/08d4e1eaa9cf7e81d76c.jpg",
+      "thumbpath": "http://localhost:2114/images/user1/08d4e1eaa9cf7e81d76c_160x160.jpg"
+    }
+  ],
+  "__v": 4
+},{
+  "_id": {
+    "$oid": "62d925e8b401fb97e5558896"
+  },
+  "contactId": "62ceec87625ff6e369a1d3f3",
+  "name": "ААО «Пожилые инвестиции»",
+  "shortName": "Пожилые",
+  "businessEntity": "ОАО",
+  "address": "Выс",
+  "contract": {
+    "no": "12346",
+    "issue_date": "2015-03-12T00:00:00Z"
+  },
+  "type": [
+    "agent",
+    "contractor"
+  ],
+  "status": "active",
+  "createdAt": "2020-11-21T08:03:00Z",
+  "updatedAt": "2020-11-23T09:30:00Z",
+  "photos": [
+    {
+      "name": "0b8fc462dcabf7610a91.png",
+      "filepath": "0b8fc462dcabf7610a91.png",
+      "thumbpath": "0b8fc462dcabf7610a91_160x160.png"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62d9c32bba12e4d33e5ecc77"
+  },
+  "contactId": "62ceec87625ff6e369a1d3f3",
+  "name": "ОАО «Пож",
+  "shortName": "Пожилые",
+  "businessEntity": "ОАО",
+  "address": "Высокая улица",
+  "contract": {
+    "no": "12346",
+    "issue_date": "2015-03-12T00:00:00Z"
+  },
+  "type": [
+    "agent",
+    "contractor"
+  ],
+  "status": "active",
+  "createdAt": "2020-11-21T08:03:00Z",
+  "updatedAt": "2020-11-23T09:30:00Z",
+  "photos": [
+    {
+      "name": "0b8fc462dcabf7610a91.png",
+      "filepath": "0b8fc462dcabf7610a91.png",
+      "thumbpath": "0b8fc462dcabf7610a91_160x160.png"
+    },
+    {
+      "name": "0fc7fefb681223261be0.jpg",
+      "filepath": {},
+      "thumbpath": {}
+    },
+    {
+      "name": "08d4e1eaa9cf7e81d76c.jpg",
+      "filepath": "http://localhost:2114/images/user1/08d4e1eaa9cf7e81d76c.jpg",
+      "thumbpath": "http://localhost:2114/images/user1/08d4e1eaa9cf7e81d76c_160x160.jpg"
+    }
+  ],
+  "__v": 4
+},{
+  "_id": {
+    "$oid": "62d9c33bba12e4d33e5ecc78"
+  },
+  "contactId": "62ceec87625ff6e369a1d3f3",
+  "name": "ААО «Пожилые инвестиции»",
+  "shortName": "Пожилые",
+  "businessEntity": "ОАО",
+  "address": "Высокая улица",
+  "contract": {
+    "no": "12346",
+    "issue_date": "2015-03-12T00:00:00Z"
+  },
+  "type": [
+    "agent",
+    "contractor"
+  ],
+  "status": "active",
+  "createdAt": "2020-11-21T08:03:00Z",
+  "updatedAt": "2020-11-23T09:30:00Z",
+  "photos": [
+    {
+      "name": "0b8fc462dcabf7610a91.png",
+      "filepath": "0b8fc462dcabf7610a91.png",
+      "thumbpath": "0b8fc462dcabf7610a91_160x160.png"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62d9c33fba12e4d33e5ecc79"
+  },
+  "contactId": "62ceec87625ff6e369a1d3f3",
+  "name": "ААО «Пожилые инвестиции»",
+  "shortName": "Пожилые",
+  "businessEntity": "ОАО",
+  "address": "Высокая улица",
+  "contract": {
+    "no": "12346",
+    "issue_date": "2015-03-12T00:00:00Z"
+  },
+  "type": [
+    "agent",
+    "contractor"
+  ],
+  "status": "active",
+  "createdAt": "2020-11-21T08:03:00Z",
+  "updatedAt": "2020-11-23T09:30:00Z",
+  "photos": [
+    {
+      "name": "0b8fc462dcabf7610a91.png",
+      "filepath": "0b8fc462dcabf7610a91.png",
+      "thumbpath": "0b8fc462dcabf7610a91_160x160.png"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62da3aefba12e4d33e5ecc7a"
+  },
+  "contactId": "62ceec87625ff6e369a1d3f3",
+  "name": "ААО «Вялые традиции»",
+  "shortName": "Вялые",
+  "businessEntity": "ОАО",
+  "address": "Быстрая улица",
+  "contract": {
+    "no": "12346",
+    "issue_date": "2015-03-12T00:00:00Z"
+  },
+  "type": [
+    "agent",
+    "contractor"
+  ],
+  "status": "active",
+  "createdAt": "2020-11-21T08:03:00Z",
+  "updatedAt": "2020-11-23T09:30:00Z",
+  "photos": [
+    {
+      "name": "0b8fc462dcabf7610a91.png",
+      "filepath": "0b8fc462dcabf7610a91.png",
+      "thumbpath": "0b8fc462dcabf7610a91_160x160.png"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62da3b11ba12e4d33e5ecc7b"
+  },
+  "contactId": "62ceec87625ff6e369a1d3f3",
+  "name": "ООО «Мужская радость Мамина сладость»",
+  "shortName": "Радости и сладости",
+  "businessEntity": "ОАО",
+  "address": "Средняя улица",
+  "contract": {
+    "no": "12346",
+    "issue_date": "2015-03-12T00:00:00Z"
+  },
+  "type": [
+    "agent",
+    "contractor"
+  ],
+  "status": "active",
+  "createdAt": "2020-11-21T08:03:00Z",
+  "updatedAt": "2020-11-23T09:30:00Z",
+  "photos": [
+    {
+      "name": "0b8fc462dcabf7610a91.png",
+      "filepath": "0b8fc462dcabf7610a91.png",
+      "thumbpath": "0b8fc462dcabf7610a91_160x160.png"
+    }
+  ]
+}]

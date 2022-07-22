@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "62ced55f625ff6e369a1d3f0"
+  },
+  "id": 1,
+  "lastname": "Григорьев",
+  "firstname": "Сергей",
+  "patronymic": "Петрович",
+  "phone": "79162165588",
+  "email": "grigoriev@funeral.com",
+  "createdAt": "2020-11-21:03:26.589Z",
+  "updatedAt": "2020-11-23T09:30:00Z"
+},{
+  "_id": {
+    "$oid": "62ceec87625ff6e369a1d3f3"
+  },
+  "lastname": "Григорьев",
+  "firstname": "Сергей",
+  "patronymic": "Петрович",
+  "phone": "79162165588",
+  "email": "grigoriev@funeral.com",
+  "createdAt": "2020-11-21:03:26.589Z",
+  "updatedAt": "2020-11-23T09:30:00Z"
+},{
+  "_id": {
+    "$oid": "62ceee2f040c59183f7d3872"
+  },
+  "lastname": "pisya",
+  "firstname": "poap",
+  "patronymic": "qwrf",
+  "phone": "qwrqrw",
+  "email": "wrqwr@gmail.com",
+  "createdAt": "Wed Jul 13 2022 19:09:19 GMT+0300 (Москва, стандартное время)",
+  "updatedAt": "Wed Jul 13 2022 19:09:19 GMT+0300 (Москва, стандартное время)",
+  "__v": 0
+}]
