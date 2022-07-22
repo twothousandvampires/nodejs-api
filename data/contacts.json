@@ -1,17 +1,5 @@
 [{
   "_id": {
-    "$oid": "62ced55f625ff6e369a1d3f0"
-  },
-  "id": 1,
-  "lastname": "Григорьев",
-  "firstname": "Сергей",
-  "patronymic": "Петрович",
-  "phone": "79162165588",
-  "email": "grigoriev@funeral.com",
-  "createdAt": "2020-11-21:03:26.589Z",
-  "updatedAt": "2020-11-23T09:30:00Z"
-},{
-  "_id": {
     "$oid": "62ceec87625ff6e369a1d3f3"
   },
   "lastname": "Григорьев",

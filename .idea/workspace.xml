@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="c4970975-ebed-4cc1-b215-ec676bf32c48" name="Changes" comment="">
+    <list default="true" id="32c9943e-34c6-4775-bc2b-4ca4269d3b3e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-    <list default="true" id="14a5e759-3a13-41c7-8fc0-29ff47bdbf9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/companies.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/companies.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/files.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/files.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/validators/files.params.validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/validators/files.params.validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Company.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/companies.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/companies.routes.js" afterDir="false" />
->>>>>>> bb7fb4ae0a3b59b5c8d815994daafb845e4394eb
+      <change beforePath="$PROJECT_DIR$/data/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/contacts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2Br6clCQ4Ps8rV5QRXlWaIGZOw7" />
+  <component name="ProjectId" id="2CHr5CgnjQpX6z4pp6Hj2lSmIsr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,36 +27,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c4970975-ebed-4cc1-b215-ec676bf32c48" name="Changes" comment="" />
-      <created>1657651938287</created>
+      <changelist id="32c9943e-34c6-4775-bc2b-4ca4269d3b3e" name="Changes" comment="" />
+      <created>1658470168832</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1657651938287</updated>
-      <workItem from="1657651939517" duration="350000" />
-      <workItem from="1657652969322" duration="939000" />
-      <workItem from="1657759225625" duration="66000" />
-=======
-      <updated>1657540025599</updated>
-      <workItem from="1657540027081" duration="432000" />
-      <workItem from="1657540547986" duration="878000" />
-      <workItem from="1657543422324" duration="7562000" />
-      <workItem from="1657607388037" duration="40000" />
-      <workItem from="1657632905275" duration="5963000" />
-      <workItem from="1657698349182" duration="1339000" />
-      <workItem from="1657701717953" duration="12635000" />
-      <workItem from="1658311927613" duration="157000" />
-      <workItem from="1658313022732" duration="61000" />
-      <workItem from="1658391436355" duration="9901000" />
->>>>>>> bb7fb4ae0a3b59b5c8d815994daafb845e4394eb
+      <updated>1658470168832</updated>
+      <workItem from="1658470170954" duration="617000" />
     </task>
     <servers />
   </component>
