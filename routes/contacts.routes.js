@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 const auth = require('../middleware/auth.middleware');
+const contactsDataValidator = require('../middleware/validators/contacts.params.validator');
 const contactsController = require('../controllers/contacts.controller');
 
 router.get(
@@ -14,6 +15,7 @@ router.get(
 router.patch(
   '/:id',
   auth,
+  contactsDataValidator.validateUpdateData,
   contactsController.update,
 );
 
@@ -26,6 +28,7 @@ router.delete(
 router.post(
     '/',
     auth,
+    contactsDataValidator.validateCreateData,
     contactsController.create,
 );
 

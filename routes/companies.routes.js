@@ -9,6 +9,7 @@ const auth = require('../middleware/auth.middleware');
 const companiesController = require('../controllers/companies.controller');
 
 const filesParamsValidator = require('../middleware/validators/files.params.validator');
+const companiesDataValidator = require('../middleware/validators/companies.params.validator');
 const filesController = require('../controllers/files.controller');
 
 router.get(
@@ -20,6 +21,7 @@ router.get(
 router.patch(
   '/:id',
   auth,
+  companiesDataValidator.validateUpdateData,
   companiesController.update,
 );
 

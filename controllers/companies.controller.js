@@ -9,7 +9,8 @@ module.exports = {
 };
 
 function get(req, res) {
-  let {perPage} = config , page = Math.max(0, req.query.page);
+  let {perPage} = config , page = Math.max(0, req.query.page ? req.query.page : 0);
+  console.log(page)
   if (req.params.id) {
     model.findOne({ _id: req.params.id }).then((response) => {
       res.status(200).json(response);

@@ -1,6 +1,8 @@
-const mongoose = require('mongoose');
 require('../models/Contact');
+
+const mongoose = require('mongoose');
 const model = mongoose.model('contact');
+
 module.exports = {
   get,
   update,
@@ -18,7 +20,8 @@ function get(req, res) {
 
 async function update(req, res) {
   const requestBody = req.body;
-  const contact = await model.findOne({ id: req.params.id });
+  const contact = await model.findOne({ _id: req.params.id });
+  console.log(contact)
   Object.keys(requestBody).forEach((key) => {
     contact[key] = requestBody[key];
   });
